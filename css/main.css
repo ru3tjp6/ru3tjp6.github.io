@@ -38,7 +38,7 @@ body {
 }
 
 .menu {
-  width: calc(100% - 520px);
+  width: calc(100% - 550px);
   display: inline-block;
   text-align: center;
   vertical-align: middle;
