@@ -1,0 +1,56 @@
+/*顯示高於carousel外框高度的物件*/
+.owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+/*被觸發的中間項目放大1.倍*/
+.owl-item.active.center {
+  z-index: 2;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: ease 0.5s;
+}
+/*調整（owl-item）的大小及原本設定的背景色改為透明*/
+#demos .owl-carousel .owl-item .item {
+  height: 400px;
+  padding: 0;
+  opacity: 0.4;
+  background-color: transparent;
+}
+/*調整被觸發中間的（owl-item）的大小*/
+#demos .owl-carousel .owl-item.active.center .item {
+  opacity: initial;
+  position: absolute;
+  width: 120%;
+  left: -5%;
+  top: -30px;
+  object-fit: contain;
+}
+
+/*假設（owl-item）裡圖片的大小不一樣，使用以下調整*/
+#demos .owl-carousel .owl-item .item img {
+  height: 100%;
+  object-fit: contain;
+}
+/*調整owl-dots的位置，不要跟放大後的圖片重疊到*/
+.owl-theme .owl-nav.disabled + .owl-dots {
+  position: absolute;
+  width: 40px;
+  right: -150px;
+  bottom: 50%;
+}
+
+#demos {
+  padding: 0 200px;
+}
+
+#demos .owl-carousel .owl-item .Gctr_intro {
+  visibility: hidden;
+}
+#demos .owl-carousel .owl-item.active.center .Gctr_intro {
+  width: 100vw;
+  position: absolute;
+  left: -200px;
+  visibility: inherit;
+  text-align: left;
+  bottom: -100px;
+}

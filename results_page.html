@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>袧神 Call God</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage fixed header and footer." />
+    <meta
+      name="keywords"
+      content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css"
+    />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/examples.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div><img class="rp_loading" src="./img/Loading.gif" /></div>
+    <div id="header">
+      <div class="nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-1">
+              <a href="#"><p>聯絡眾神</p></a>
+            </div>
+            <div class="col-1">
+              <a href="#"><p>袧神Q&A</p></a>
+            </div>
+            <div class="col-8">
+              <a href="./index.html"
+                ><img src="./img/nav_logotype.png" height="50px"
+              /></a>
+            </div>
+            <div class="col-2">
+              <ul>
+                <li>
+                  <a href="#"><img src="./img/nav_IG.png" width="40px" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/nav_dcard.png" width="40px" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/nav_plurk.png" width="40px" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">© Copyright 袧神 all right reserved.</div>
+
+    <div class="results" id="fullpage">
+      <div class="section" id="section0">
+        <div class="results_text">
+          <h4><strong>神旨</strong></h4>
+        </div>
+        <button
+          class="reload"
+          id="reload"
+          type="button"
+          onclick="completeSentence(phraseArray, 'randomAdjective');change()"
+        >
+          <img src="./img/rp_click_ball.png" width="140px" />
+        </button>
+
+        <div class="rp_demo" id="rp_demo">
+          <p><strong>非誠勿試，只度有緣人</strong></p>
+          <button onclick="location.href='./God_center.html'">繼續袧神</button>
+        </div>
+
+        <div class="reload_text">
+          <h2 id="reload_results">
+            <span id="randomAdjective" class="label"></span>
+          </h2>
+        </div>
+      </div>
+      <div class="wrapper">
+        <p><span></span></p>
+        <p><span></span></p>
+      </div>
+    </div>
+
+    <!--
+    <div id="fullpage">
+      <div class="section" id="results_bg">
+        <div class="results_text">
+          <h4>神旨</h4>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="./js/rp_ball.js"></script>
+    <script type="text/javascript" src="./js/appear_demo.js"></script>
+    <script type="text/javascript" src="./js/fullpage.js"></script>
+    <script type="text/javascript" src="./js/examples.js"></script>
+    <script type="text/javascript" src="./js/generator.js"></script>
+
+    <script type="text/javascript">
+      var myFullpage = new fullpage("#fullpage", {
+        anchors: ["firstPage", "secondPage", "3rdPage"],
+        sectionsColor: ["#C63D0F", "#1BBC9B", "#7E8F7C"],
+        css3: true,
+      });
+    </script>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- main js -->
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
