@@ -114,8 +114,62 @@
   height: 50vh;
 }
 /* --------------------*/
+/*參拜方式卡片*/
+/* 翻轉效果 */
+.card-container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
 
-.trigger_ways .Card {
+.cover,
+.back {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.25s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+}
+.cover {
+  transform: rotatey(0deg);
+}
+.card-container:hover .cover {
+  transform: rotatey(180deg);
+}
+.back {
+  transform: rotatey(-180deg);
+}
+.card-container:hover .back {
+  transform: rotatey(0deg);
+}
+
+.card-container img {
+  width: 100%;
+}
+
+.card-container .trigger_text p {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  padding: 0 15%;
+}
+.card-container .trigger_text h4 {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  padding: 0 15%;
+  display: inline;
+  color: #fab987;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* 測試昱萱翻牌的--------------------*/
+/* .trigger_ways .Card {
   position: absolute;
   height: 180px;
   width: 228px;
@@ -137,7 +191,7 @@
 .trigger_ways .step3 {
   translate: 48px -36px;
   background-color: #53100c40;
-}
+} */
 /* --------------------*/
 /*問事輸入*/
 .god_input p {
@@ -152,6 +206,17 @@
 }
 .god_input input {
   color: #fff;
+  background: none;
+  border-radius: 10px;
+  border-color: #fab987;
+  width: 524px;
+  height: 266px;
+  padding: 16px 20px;
+  outline: none;
+  vertical-align: text-top;
+}
+.god_input textarea {
+  color: #fab987;
   background: none;
   border-radius: 10px;
   border-color: #fab987;
@@ -187,33 +252,13 @@
   line-height: 40px;
   position: absolute;
 }
-
-/* .gradient-button-wrapper {
-  box-sizing: border-box;
-  width: 100px;
-  height: 100px;
-  padding: 2px;
-  border-radius: 4px;
-  background-image: linear-gradient(red, yellow, blue);
-}
-
-.gradient-button {
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  background: #fff;
-  padding: 0 5px;
-  border: 0;
-  cursor: pointer;
-} */
-
 /* --------------------*/
 
 /* Overwriting styles for navigation bullets
 	* --------------------------------------- */
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: white;
+  background: #fab987;
 }
 
 /* homepage */
@@ -378,6 +423,15 @@
   z-index: 999;
 }
 
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #fab987;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #ff3732;
+}
+
 #demos .owl-carousel .item h4 {
   color: #fff;
   font-size: 16px;
@@ -497,7 +551,7 @@
 }
 
 /* 測試翻牌 */
-.card-container {
+/* .card-container {
   width: 300px;
   height: 300px;
   position: absolute;
@@ -517,19 +571,17 @@
   vertical-align: top;
 }
 .cover {
-  /* background-color: blue; */
   transform: rotatey(0deg);
 }
 .card-container:hover .cover {
   transform: rotatey(180deg);
 }
 .back {
-  /* background-color: yellow; */
   transform: rotatey(-180deg);
 }
 .card-container:hover .back {
   transform: rotatey(0deg);
-}
+} */
 
 #stage {
   text-align: center;
@@ -709,19 +761,17 @@
 
 #rp_demo button {
   margin-top: 30px;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
   border: 0.5px solid #fab987;
-  width: 50%;
   height: 32px;
-  padding: 0;
+  padding: 0 20px;
   font-size: 14px;
+  line-height: 32px;
   color: #fab987;
   background-color: transparent;
 }
 #rp_demo button:hover {
-  color: #3d1110;
+  color: #fff;
   background-color: #fab987;
 }
 
