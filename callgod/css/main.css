@@ -156,7 +156,7 @@
   position: absolute;
   right: 0;
   width: 100%;
-  padding: 0 15%;
+  padding: 0 5%;
 }
 .card-container .trigger_text h4 {
   position: absolute;
@@ -229,6 +229,20 @@
 ::placeholder {
   color: #fab987;
 }
+
+/* placeholder消失 */
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+textarea:focus:-moz-placeholder {
+  color: transparent;
+} /* FF 4-18 */
+textarea:focus::-moz-placeholder {
+  color: transparent;
+} /* FF 19+ */
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+} /* IE 10+ */
 
 .god_input button {
   display: block;
@@ -347,6 +361,12 @@
 /* --------------------------------------- */
 
 /* God_center */
+.Gctr_carousel_bg img {
+  position: absolute;
+  left: 0;
+  height: 70vh;
+  width: 100vw;
+}
 #God_center {
   background-image: url(../img/Gctr_bg_brown.png);
   background-repeat: no-repeat;
@@ -423,7 +443,10 @@
   z-index: 999;
 }
 
-.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #fab987;
+  background-image: url(../img/Gctr_active_dot.png);
+}
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #fab987;
 }
@@ -507,7 +530,7 @@
   height: 48px;
 }
 
-.god_intro_bg {
+.Pandemos .god_intro_bg {
   position: absolute;
   width: 100%;
   z-index: -99;
@@ -535,7 +558,7 @@
   left: 290px;
   bottom: 500px;
 }
-#pandemos_bg_lifet {
+#pandemos_bg_left {
   z-index: -98;
   position: absolute;
   left: 0;
@@ -549,7 +572,224 @@
   top: -1080px;
   height: 100%;
 }
+.Intro_pandemos_basic-intro {
+  position: relative;
+}
+.Intro_pandemos_basic-intro_bg {
+  position: absolute;
+  right: 3vw;
+  top: -7vh;
+  height: 30vh;
+  width: 37vw;
+}
 
+/* --------------------------------------- */
+/* Zeus_intro_page */
+.Zeus #section0 {
+  z-index: -9;
+  background-image: url(../img/Intro_zeus_gradient_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.Zeus #section1 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.Zeus #section2 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_input-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  bottom: 0;
+}
+.Zeus #section3 {
+  z-index: -9;
+  height: 48px;
+}
+.Zeus_title h2 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 40px;
+}
+.Intro_zeus_text_decoline {
+  position: absolute;
+  bottom: 0;
+  overflow: visible;
+  display: flex;
+  padding-left: 20px;
+}
+
+/* --------------------------------------- */
+/* Pluton_intro_page */
+.Pluton #section0 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_gradient_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.Pluton #section1 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.Pluton #section2 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_input-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  bottom: 0;
+}
+.Pluton #section3 {
+  z-index: -9;
+  height: 48px;
+}
+
+.Pluton .god_intro_bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.Pluton .god_intro_bg .IP img {
+  height: calc(100vh - 90px);
+}
+
+.Pluton .pluton_bg_bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+.Pluton .pluton_bg_top {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+.Pluton .pluton_bg_left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.Pluton .pluton_bg_right {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 40vw;
+}
+.Pluton .pluton_bg_right img {
+  width: 60vw;
+}
+
+.Pluton .god_intro .ph2 {
+  padding-top: 10vh;
+}
+
+/* --------------------------------------- */
+/* Pluton_intro_page */
+.Hermes #section0 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_gradient_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.Hermes #section1 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.Hermes #section2 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_input-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  bottom: 0;
+}
+.Hermes #section3 {
+  z-index: -9;
+  height: 48px;
+}
+
+.Hermes .god_intro_bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Hermes .god_intro_bg .IP {
+  z-index: -6;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100vh - 90px);
+}
+
+.Hermes .god_intro_bg .IP img {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+.Hermes .Hermes_bg_left {
+  z-index: -5;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: calc(100vh - 90px);
+}
+
+.hermes_line_1 {
+  position: absolute;
+  left: 10vw;
+  bottom: 25vh;
+}
+
+.hermes_line_2 {
+  position: absolute;
+  left: 0;
+  bottom: 15vh;
+}
+
+.hermes_line_3 {
+  position: absolute;
+  left: 30vw;
+  bottom: -5vh;
+}
+.Hermes .god_intro .ph1 {
+  padding-top: 10vh;
+}
+.Hermes .god_intro .ph2 {
+  padding-top: 5vh;
+}
+
+/* --------------------------------------- */
 /* 測試翻牌 */
 /* .card-container {
   width: 300px;
@@ -789,6 +1029,10 @@
   top: 300%;
   animation-name: delayshow;
   animation-duration: 4.5s;
+}
+
+.rp_loading img {
+  object-fit: cover;
 }
 @keyframes delayshow {
   0% {
