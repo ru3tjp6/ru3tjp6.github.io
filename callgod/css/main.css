@@ -3,7 +3,7 @@
   position: fixed;
   display: block;
   width: 100%;
-  z-index: 9;
+  z-index: 99;
   text-align: center;
   font-size: 16px;
 }
@@ -23,7 +23,7 @@
 #in_footer {
   bottom: 0px;
   width: 100%;
-  z-index: 9;
+  z-index: 99;
   text-align: center;
   font-size: 14px;
   background-color: #53100c;
@@ -616,6 +616,26 @@ textarea:focus:-ms-input-placeholder {
   z-index: -9;
   height: 48px;
 }
+
+.Zeus .god_intro_bg {
+  position: absolute;
+  width: 100%;
+  z-index: -99;
+  bottom: 0;
+}
+
+.Zeus .IP {
+  position: absolute;
+  top: 0;
+}
+
+.Zeus .IP img {
+  position: absolute;
+  height: calc(100vh - 90px);
+  width: 100vw;
+  bottom: 0;
+}
+
 .Zeus_title h2 {
   display: flex;
   align-items: center;
@@ -678,6 +698,7 @@ textarea:focus:-ms-input-placeholder {
   bottom: 0;
   width: 100vw;
 }
+
 .Pluton .pluton_bg_top {
   position: absolute;
   top: 0;
@@ -703,7 +724,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 /* --------------------------------------- */
-/* Pluton_intro_page */
+/* Hermes_intro_page */
 .Hermes #section0 {
   z-index: -9;
   background-image: url(../img/Intro_pandemos_gradient_bg.png);
@@ -787,6 +808,247 @@ textarea:focus:-ms-input-placeholder {
 }
 .Hermes .god_intro .ph2 {
   padding-top: 5vh;
+}
+
+/* --------------------------------------- */
+/* Apollo_intro_page */
+.Apollo #section0 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_gradient_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.Apollo #section1 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.Apollo #section2 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_input-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  bottom: 0;
+}
+.Apollo #section3 {
+  z-index: -9;
+  height: 48px;
+}
+
+.Apollo .god_intro_bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Apollo .Apollo_bg_top {
+  position: absolute;
+  top: -95vh;
+  width: 100vw;
+}
+
+.Apollo .Apollo_bg_bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+.Apollo .Apollo_bg_left {
+  z-index: -5;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+}
+
+.Apollo .god_intro {
+  position: relative;
+}
+
+.Apollo .Apollo_Ellipse {
+  position: absolute;
+  left: -5vw;
+  z-index: -5;
+}
+
+.Apollo .Apollo_line_2 {
+  position: absolute;
+  display: flex;
+  top: 121px;
+  left: 0;
+  z-index: -5;
+}
+
+.Apollo_line3 {
+  position: relative;
+}
+
+.Apollo .Apollo_line_3 {
+  position: absolute;
+  left: -50px;
+  top: 20px;
+  z-index: -5;
+}
+
+.Apollo .Apollo_Ellipse img {
+  width: 11vw;
+}
+.Apollo .Apollo_line_2 img {
+  width: 7vw;
+}
+
+.Apollo .Apollo_line_3 img {
+  width: 10vw;
+}
+
+.Apollo .god_intro_bg .IP {
+  z-index: -6;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100vh - 90px);
+}
+
+.Apollo .god_intro_bg .IP img {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+.Apollo .god_intro .ph1 {
+  padding-top: 5vh;
+}
+
+.Apollo .god_intro .ph3 {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* --------------------------------------- */
+/* Athena_intro_page */
+.Athena #section0 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_gradient_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.Athena #section1 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.Athena #section2 {
+  z-index: -9;
+  background-image: url(../img/Intro_pandemos_input-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  bottom: 0;
+}
+.Athena #section3 {
+  z-index: -9;
+  height: 48px;
+}
+
+.Athena .god_intro_bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Athena .Athena_bg_bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  z-index: -4;
+}
+
+.Athena .Athena_bg_left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: calc(100vh - 90px);
+  z-index: -6;
+}
+
+.Athena .Athena_bg_right {
+  position: absolute;
+  right: -100vw;
+  bottom: 0;
+  height: calc(100vh - 90px);
+  z-index: -4;
+}
+
+.Athena .god_intro_bg .IP {
+  z-index: -5;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100vh - 90px);
+}
+
+.Athena .god_intro_bg .IP img {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+.Athena .intro_basic_athena_ph1 {
+  display: flex;
+  align-items: flex-end;
+}
+.Athena .ph2 {
+  padding: 5vh 0;
+}
+.Athena .athena_ph2 {
+  display: flex;
+  align-items: center;
+}
+.Athena .intro_athena_ph2_bg {
+  position: relative;
+  height: calc(96px + 8vh);
+}
+.Athena .intro_athena_ph2_bg img {
+  position: absolute;
+  right: 1vw;
+  bottom: 0;
+  z-index: -1;
+  width: 45vw;
+  height: 100%;
+}
+
+.Athena .god_intro .ph3 {
+  padding-top: 2vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.Athena .god_basic_intro {
+  position: relative;
+}
+
+.Athena .god_basic_intro .intro_basic_athena_ph1 {
+  position: absolute;
+  top: -30px;
 }
 
 /* --------------------------------------- */
