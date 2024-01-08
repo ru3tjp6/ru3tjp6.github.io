@@ -583,6 +583,18 @@ textarea:focus:-ms-input-placeholder {
   width: 37vw;
 }
 
+.Pandemos .god_intro .ph1 {
+  padding: 10vh 0 5vh 0;
+}
+
+.Pandemos .god_intro .ph2 {
+  padding: 5vh 0;
+}
+
+.Pandemos .god_intro .ph3 {
+  padding: 2vh 0 10vh 0;
+}
+
 /* --------------------------------------- */
 /* Zeus_intro_page */
 .Zeus #section0 {
